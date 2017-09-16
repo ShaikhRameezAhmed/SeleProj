@@ -9,10 +9,11 @@ import java.util.HashMap;
 import java.util.Properties;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFCell; 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.BeforeSuite; 
+//import org.testng.annotations.BeforeSuite; 
+//import org.testng.annotations.BeforeSuite;
 
 public class ReadExcelTestData implements Serializable{
 
@@ -27,12 +28,12 @@ public class ReadExcelTestData implements Serializable{
 	public static XSSFWorkbook ExcelWBook;
 	public static XSSFSheet ExcelWSBook;
 	String sheetname = "Sheet1";
-	String testdatasetname = "TestDataSet1";
+	String testdatasetname = "TestDataSet1"; 
 	public static XSSFCell ExcelWCBook;
 	public static HashMap<String,String> KeyvalueofStringData;
 
 	
-	@BeforeSuite
+	//@BeforeSuite
 	public void GettingTestdataFromFilebeforeSuite() throws IOException {
 		testDataFile = new File(testdataFilePathinString);
 

@@ -10,7 +10,7 @@ import java.util.Properties;
 public class PropertiesOperation {
 
 	static Properties prop;
-	public HashMap<String, String> MaploadingProperties = new HashMap<String, String>();
+	
 	
 	
 	//Method for loading the properties
@@ -30,7 +30,7 @@ public class PropertiesOperation {
 		
 		//Load property with the path and put in hashmap
 		public static void loadProperty(String propertyPath, HashMap<String, String> loader) throws IOException {
-			prop = new Properties();
+			Properties prop = new Properties();
 			prop.load(Thread.currentThread().getContextClassLoader().getResourceAsStream(propertyPath));
 			
 			//adding the property in the hasmap
@@ -44,6 +44,7 @@ public class PropertiesOperation {
 				}
 						
 			}
+			
 			
 			
 			
